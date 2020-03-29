@@ -1,0 +1,7 @@
+<div>
+  <app-description></app-description>
+  <app-console-input (messageCreated)="onNewMessage($event)"></app-console-input>
+  <div><br/></div>
+  <app-console-output  *ngFor="let message of messages"
+  [inputMessage]="message"></app-console-output>
+</div>
